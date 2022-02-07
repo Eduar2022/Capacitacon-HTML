@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ig de la paginita</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+       <tbody>
+        <tr>
+            <td>Culo</td>
+            <td>Gratis</td>
+        </tr>
+        <tr>
+            <td>Cerdo</td>
+            <td>$20000</td>
+        </tr>
+        <tr>
+            <td>Cerdo gordo grasoso</td>
+            <td>$200000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>Total</td>
+        <td>$22000</td>
+    </tfoot>
+    </table>
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+    </ul>
+    
+    <!--ol es lista ordenada-->
+    <ol>
+        <li value="50">Elemento1</li>
+        <li value="60">Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub Elemento1</li>
+                <li style="list-style-type: lower-alpha;">sub Elemento2</li>
+                <li style="list-style-type: lower-alpha;">sub Elemento3</li>
+            </ol>
+        </li>
+    </ol>
+    
+    <form action ="/formulario.php" method="GET">
+        <label for="nombre">Nombre:</label>
+        <input value="nombresito" type="text" id="nombre" name="nombre" placeholder="Digite su nombre"/>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input value="apellidito" type="text" id="apellido" name="apellido" placeholder="Digite su apellido"/>
+        <br>
+        <label for="comentario">Comentario</label><br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario" >valor por defecto</textarea>
+        <br>
+        <button type="submit" ><img src="imagenes/enviar.png" width="20"></button>
+        <button type="button" ><img src="imagenes/boton.png" width="20"></button>
+        <button type="reset" ><img src="imagenes/reset.png" width="20"></button>
+    </form>
+    <h1>un heading</h1>
+    <h2>dos heading</h2>
+    <h3>eo</h3>
+    <h6>eeoe</h6>
+    <p>Cerdito feliz está muy triste.</p>
+    <hr>
+    <h2>Cerdito juan</h2>
+    <p>texto bien <span style="color:rgb(0, 255, 255)">largo para mostar</span><br>
+        la etiqueta de span
+    </p>
+    <!--comentarios en html-->
+    <a target ="_blank" href="https://www.google.com.co">Google</a> <!--target =_"blank" nos permite abrir el vinculo en otra pestaña-->
+    <img src="imagenes/gnarchiquito.png" width="500">
     
 </body>
 </html>
